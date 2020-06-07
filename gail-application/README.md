@@ -1,5 +1,4 @@
-# Reproducing coinrun expriements in Colab: Recommended way. 
-
+# Recommended way for reproducing coinrun expriements is [Colab](https://colab.research.google.com/notebooks/intro.ipynb):
 ```
 import os
 del os.environ['LD_PRELOAD']
@@ -64,7 +63,7 @@ drive.mount('/content/gdrive')
  ```
 
 # To reproduce locally (has been only tested on Mac, python3) with the same arguments and codes as above. 
-## install coinrun env from https://github.com/openai/coinrun
+## install coinrun env from [coinrun](https://github.com/openai/coinrun)
 
 ```
 unzip gail_experts.zip
@@ -78,5 +77,7 @@ pip install -r requirements.txt
 ## Visualizing results
 
 Pendulum: Point the visualize_training_dynamics.py to the logs/pendulum/
-MountainCarContinuous: for visualization, point the visualize_training_dynamics.py to the logs/car/
+
+MountainCarContinuous: Point the visualize_training_dynamics.py to the logs/car/
+
 Coinrun:  Coinrun automatically saves the results in a directory. The directory name gets printed at the beginning. You have to put all the directories in any arbitrary directory with the results directory saved up with seeds-number at the end. For example `coinrun-0' `coinrun-1' `coinrun-2' in a parent directory `coinrun'. Then point the visualize_training_dynamics.py to the logs/coinrun/
