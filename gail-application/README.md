@@ -63,7 +63,7 @@ drive.mount('/content/gdrive')
 !python main.py --env-name Pendulum-v0 --algo ppo --gail --use-gae --save-interval 100 --log-interval 10 --num-steps 32 --num-processes 8 --lr 3e-6 --entropy-coef 0.02 --value-loss-coef 1 --ppo-epoch 10 --gail-epoch 5 --num-mini-batch 8 --gamma 0.99 --gae-lambda 0.95 --num-env-steps 4000000 --seed 0 --log-dir logs/pend/gail-0
  ```
 
-#To reproduce locally (has been only tested on Mac, python3) with the same arguments and codes as above. 
+# To reproduce locally (has been only tested on Mac, python3) with the same arguments and codes as above. 
 ## install coinrun env from https://github.com/openai/coinrun
 
 ```
@@ -77,6 +77,6 @@ pip install -r requirements.txt
 
 ## Visualizing results
 
-### Pendulum: Point the visualize_training_dynamics.py to the logs/pendulum/
-### MountainCarContinuous: for visualization, point the visualize_training_dynamics.py to the logs/car/
-### Coinrun:  Coinrun automatically saves the results in a directory. The directory name gets printed at the beginning. You have to put all the directories in any arbitrary directory with the results directory saved up with seeds-number at the end. For example `coinrun-0' `coinrun-1' `coinrun-2' in a parent directory `coinrun'. Then point the visualize_training_dynamics.py to the logs/coinrun/
+Pendulum: Point the visualize_training_dynamics.py to the logs/pendulum/
+MountainCarContinuous: for visualization, point the visualize_training_dynamics.py to the logs/car/
+Coinrun:  Coinrun automatically saves the results in a directory. The directory name gets printed at the beginning. You have to put all the directories in any arbitrary directory with the results directory saved up with seeds-number at the end. For example `coinrun-0' `coinrun-1' `coinrun-2' in a parent directory `coinrun'. Then point the visualize_training_dynamics.py to the logs/coinrun/
