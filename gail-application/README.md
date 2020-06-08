@@ -80,4 +80,4 @@ Pendulum: Point the visualize_training_dynamics.py to the logs/pendulum/
 
 MountainCarContinuous: Point the visualize_training_dynamics.py to the logs/car/
 
-Coinrun:  Coinrun automatically saves the results in a directory. The directory name gets printed at the beginning. You have to put all the directories in any arbitrary directory with the results directory saved up with seeds-number at the end. For example `coinrun-0' `coinrun-1' `coinrun-2' in a parent directory `coinrun'. Then point the visualize_training_dynamics.py to the logs/coinrun/
+Coinrun:  Coinrun automatically saves the results in a directory. The directory name gets printed at the beginning. You have to put all the directories in any arbitrary directory with the results directory saved up with seeds-number at the end. For example `coinrun-0` `coinrun-1`,  `coinrun-2` in a parent directory `coinrun`. Then point the visualize_training_dynamics.py to the logs/coinrun/
