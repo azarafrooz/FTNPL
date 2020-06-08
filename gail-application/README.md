@@ -89,7 +89,7 @@ envs = ShmemVecEnv(envs, context='fork')
 TypeError: __init__() got an unexpected keyword argument 'context'
 ```
 
- Please run
+ It means, you have an old baseline lib installed. Please install the latest from baselines github:
  ```
  pip uninstall baslines
  git clone https://github.com/openai/baselines.git
@@ -97,4 +97,3 @@ cd baselines
 pip install -e .
 cd ..
 ```
-
