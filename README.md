@@ -1,5 +1,5 @@
 # FTNPL
-Follow the Neurally-Perturbed Leader for Adversarial Training
+Pytorch implementation of [Follow the Neurally-Perturbed Leader for Adversarial Training](https://arxiv.org/pdf/2002.06476.pdf)
 
 Each directory contains its own readme. 
 
